@@ -36,7 +36,7 @@ exports.signup = async (req, res) => {
             createdAt: userResponse.createdAt,
             updatedAt: userResponse.updatedAt
         }
-        res.sendStatus(201).send(responseObj)
+        res.sendStatus(201).send(responseObj)   //return the object
     } catch(error) {
         console.log(error.message);
         res.sendStatus(500).send({
